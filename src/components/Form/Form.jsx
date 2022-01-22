@@ -21,7 +21,6 @@ function Form() {
 
   return <>
     <form onSubmit={handleSubmit} className={styles.form}>
-      <label htmlFor="phone-number">Phone</label>
       <PhoneInput
         required
         id="phone-number"
@@ -30,14 +29,13 @@ function Form() {
         onChange={setPhone}
       />
       <div>
-        <input id="message-checkbox" type="checkbox" onChange={() => {setShowMessageInput(!showMessageInput)}} />
+        <input id="message-checkbox" type="checkbox" onChange={() => {setShowMessageInput(!showMessageInput)}} className={styles.checkbox} />
         <label htmlFor="message-checkbox">Do you want to add a message?</label>
       </div>
       {showMessageInput
         &&
         <>
-          {/* <label htmlFor="message">Message</label> */}
-          <textarea ref={messageRef} id="message" type="text" />
+          <textarea ref={messageRef} id="message" type="text" className={styles.textarea} cols={30} rows={5} />
         </>}
       <button type="submit" className={styles.ctaBtn}>Text now</button>
     </form>

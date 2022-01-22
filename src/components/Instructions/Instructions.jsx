@@ -1,12 +1,13 @@
 import logo from "../../assets/img/icons/logo.svg"
 
+import styles from "./Instructions.module.css"
+
 function Instructions() {
   return (
-    <aside>
-      <img src={logo} alt="WithoutApp logo" />
-      <h2>Title</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab alias iure maxime sint quis! Eos, iste fugiat blanditiis cum suscipit distinctio sunt perferendis nesciunt natus et cumque necessitatibus deleniti minus?
-      Sequi tempora omnis nobis quaerat provident? Hic impedit nisi sapiente pariatur eius cumque veniam dignissimos? Consequatur temporibus fugit debitis eligendi quasi hic voluptatum non architecto. Voluptatum rerum nihil quisquam optio!</p>
+    <aside className={styles.container}>
+      <img src={logo} alt="WithoutApp logo" className={styles.logo} />
+      <h2>Welcome!</h2>
+      <p>Using this simple form you can text anyone via WhatsApp, even if you don't have their number. You must select a country code or type it, write a message if you want, and... that's it!</p>
     </aside>
   );
 }

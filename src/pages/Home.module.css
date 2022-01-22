@@ -3,12 +3,12 @@
   width: 100vw;
   justify-content: space-around;
   align-items: center;
+  margin-top: 4rem;
 }
 
-.form {
-  
-}
-
-.instructions {
-  
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
 }

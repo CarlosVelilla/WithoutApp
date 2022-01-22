@@ -1,8 +1,18 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.checkbox {
+  accent-color: #436D4A;
+  margin-right: 0.25rem;
+}
+
+.textarea {
+  margin-bottom: 2rem;
 }
 
 .ctaBtn {

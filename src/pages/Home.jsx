@@ -19,8 +19,8 @@ function Home({ modalSelected, modalShow, setModalShow }) {
       <div className={styles.container}>
         <Container >
           <Row>
-            <Col><Form className={styles.form} /></Col>
             <Col><Instructions className={styles.instructions} /></Col>
+            <Col className={styles.formContainer}><Form /></Col>
           </Row>
         </Container>
       </div>
