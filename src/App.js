@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [modalShow, setModalShow] = useState(false);
-  const [modalSelected, setModalSelected] = useState(null);
+  const [modalSelected, setModalSelected] = useState("workModal");
 
   return (
     <div>
