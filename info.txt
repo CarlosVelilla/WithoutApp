@@ -1,9 +1,0 @@
-WhatsApp logo svg: https://iconos8.es/icons/set/whatsapp
-
-Phone number country code: https://www.npmjs.com/package/react-phone-number-input
-
-WhatsApp API documentation: https://tech.hindustantimes.com/how-to/whatsapp-tips-and-tricks-how-to-send-whatsapp-message-to-number-not-in-contact-list-71638161755971.html
-
-https://react-bootstrap.netlify.app/
-
-Buttons styles: https://getcssscan.com/css-buttons-examples

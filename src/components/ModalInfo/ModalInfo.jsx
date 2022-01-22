@@ -1,3 +1,5 @@
+import { v4 as uuid } from 'uuid';
+
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -20,9 +22,9 @@ function ModalInfo(props) {
       </Modal.Header>
       <Modal.Body>
         <h4>{subtitle}</h4>
-        <p>
-          {text}
-        </p>
+        {text.map((paragraph) => (
+          <p key={uuid()}>{paragraph}</p>
+        ))}
       </Modal.Body>
       <Modal.Footer>
         <Button variant="success" onClick={props.onHide}>Close</Button>

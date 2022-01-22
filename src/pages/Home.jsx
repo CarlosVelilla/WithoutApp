@@ -15,9 +15,6 @@ function Home({ modalSelected, modalShow, setModalShow }) {
         modalSelected={modalSelected}
         show={modalShow}
         onHide={() => setModalShow(false)}
-        title="Title"
-        subtitle="Subtitle"
-        text="Text"
       />
       <div className={styles.container}>
         <Container >
