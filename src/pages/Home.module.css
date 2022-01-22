@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form {
+  
+}
+
+.instructions {
+  
+}

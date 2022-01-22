@@ -1,13 +1,22 @@
+import { useState } from "react";
+
 import Header from "./components/Header/Header"
-import Form from "./components/Form/Form";
-import Footer from "./components/Footer/Footer"
+import Home from "./pages/Home";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const [modalShow, setModalShow] = useState(false);
+  const [modalSelected, setModalSelected] = useState(null);
+
   return (
     <div>
-      <Header />
-      <Form />
-      <Footer />
+      <Header setModalSelected={setModalSelected} setModalShow={setModalShow} />
+      <Home
+        modalShow={modalShow}
+        setModalShow={setModalShow}
+        modalSelected={modalSelected}
+      />
     </div>
   );
 }
